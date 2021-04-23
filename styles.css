@@ -1,0 +1,53 @@
+@font-face {
+  font-family: 'action_manregular';
+  src: url('Fonts/Action_Man-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'cascadia';
+  src: url('Fonts/Cascadia.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.topbar {
+  display: flex;
+  flex-wrap: wrap;
+  position: fixed;
+  overflow: hidden;
+  width: 100%;
+  justify-content: center;
+  z-index: 2;
+}
+
+.topbar a {
+
+  font-family: 'action_manregular';
+  font-weight: 300;
+  color: #7FFFD4;
+  text-decoration: none;
+  text-shadow: 4px 4px black;
+  padding-left: 0.6em;
+  padding-right: 0.6em;
+}
+
+.topbar a:hover {
+  transition: all 0.5s;
+  color: #40E0D0;
+}
+.topbar a:active {
+  color: black;
+}
+ a:visited {
+  color: #7FFFD4;
+}
