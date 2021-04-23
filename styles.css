@@ -20,6 +20,16 @@ body {
   background-attachment: fixed;
 }
 
+#main,
+#about,
+#services,
+#contact {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+  overflow: hidden;
+}
+
 .topbar {
   display: flex;
   flex-wrap: wrap;
@@ -50,4 +60,90 @@ body {
 }
  a:visited {
   color: #7FFFD4;
+}
+
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  z-index: 1;
+}
+
+.description {
+  font-family: 'cascadia';
+  color: DarkTurquoise;
+  font-size: 12px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 4px 4px black;
+  font-size: 200%;
+}
+
+/* MOBILE LAYOUT */
+@media only screen and (max-width: 414px) {
+
+  body {
+    background-image: url('Images/bgmobile.jpg');
+  }
+
+  #main,
+  #about,
+  #services,
+  #contact {
+    justify-content: center;
+  }
+
+  .topbar {
+    padding-top: 1.7em;
+  }
+
+  .topbar a {
+    font-size: 25px;
+  }
+
+  .social {
+    justify-content: center;
+  }
+
+  .social img {
+    width: 32px;
+    height: auto;
+    padding:1em;
+  }
+
+  .description {
+    font-size: 1em;
+    margin: 4.5em 1.5em 2em 1.5em;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+  }
+
+  p {
+    padding: 0.3em;
+    margin-bottom: 0em;
+  }
+
+  .name img{
+    display: flex;
+    margin-top: 6em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+  }
+
+  .photo img {
+    display: flex;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+  }
+
 }
