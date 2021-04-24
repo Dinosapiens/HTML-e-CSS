@@ -24,7 +24,7 @@ body {
   background-attachment: fixed;
 }
 
-#main,
+#home,
 #about,
 #services,
 #contact {
@@ -134,6 +134,34 @@ textarea {
   font-family: inherit;
 }
 
+button {
+  align-self: center;
+  background-color: #7FFFD4; /* Green */
+  border: none;
+  font-family: inherit;
+  font-weight: 400;
+  color: black;
+  padding: 1em 1em;
+  margin-top: 1em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  width: 10em;
+  border-radius: 1.5em;
+  box-shadow: 3px 4px DarkSlateGray;
+}
+
+button:hover {
+  transition: all 0.3s;
+  background-color: #A8FFF0;
+}
+
+button:active {
+  background-color: DarkTurquoise;
+  box-shadow: 0px 0px;
+}
+
 footer {
   display: flex;
   flex-wrap: wrap;
@@ -167,7 +195,7 @@ footer a:active {
     background-image: url('Images/bgmobile.jpg');
   }
 
-  #main,
+  #home,
   #about,
   #services,
   #contact {
