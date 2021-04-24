@@ -1,3 +1,4 @@
+/* Font dedicato ai menu di navigazione */
 @font-face {
   font-family: 'action_manregular';
   src: url('Fonts/Action_Man-webfont.woff') format('woff');
@@ -5,6 +6,7 @@
   font-style: normal;
 }
 
+/* Font dedicato alle sezioni descrittive. */
 @font-face {
   font-family: 'Blackfriday';
   src: url('Fonts/Blackfriday.ttf') format('truetype');
@@ -12,10 +14,13 @@
   font-style: normal;
 }
 
+/* Uno scroll visibile dopo il click sui link della barra superiore. */
 html {
   scroll-behavior: smooth;
 }
 
+/* Si fa in modo che lo sfondo di body copra effettivamente tutta la schermata
+   e rimanga fisso durante lo scroll. */
 body {
   margin: 0px;
   padding: 0px;
@@ -72,6 +77,8 @@ body {
   z-index: 1;
 }
 
+/* Riquadri descrittivi che verranno poi modificati nello specifico
+dal singolo dispositivo. */
 .description {
   font-family: 'Blackfriday';
   color: DarkTurquoise;
@@ -95,6 +102,8 @@ p {
   justify-content: center;
 }
 
+/* Segue la parte finale della pagina. */
+/* Questa classe manipola i campi da completare tramite input */
 .form {
   display: flex;
   justify-content: center;
@@ -134,9 +143,10 @@ textarea {
   font-family: inherit;
 }
 
+/* Pulsante per inviare il messaggio scritto. */
 button {
   align-self: center;
-  background-color: #7FFFD4; /* Green */
+  background-color: #7FFFD4;
   border: none;
   font-family: inherit;
   font-weight: 400;
@@ -192,6 +202,7 @@ footer a:active {
 /* MOBILE LAYOUT */
 @media only screen and (max-width: 414px) {
 
+  /* Lo sfondo cambia a seconda del dispositivo. */
   body {
     background-image: url('Images/bgmobile.jpg');
   }
@@ -228,6 +239,7 @@ footer a:active {
     padding-right: 0.3em;
   }
 
+  /* Negli smartphone è necessario ridurre il riempimento laterale. */
   p {
     padding: 0.3em 0.6em 0.3em 0.6em;
     margin-bottom: 0em;
@@ -331,7 +343,7 @@ footer a:active {
 
   .description {
     font-size: 1.2em;
-    margin: 7em 3em 3em 3em;
+    margin: 5em 3em 3em 3em;
     padding: 2 em;
   }
 
@@ -401,7 +413,7 @@ footer a:active {
   }
 
   .left_part {
-    /* border: 1px solid red; */
+    /* border: 1px solid red; debug */
     flex-direction: column;
     margin-right: -10em;
   }
@@ -434,7 +446,7 @@ footer a:active {
     margin-top: -10%;
     top: 50%;
     padding-left: 6%;
-    /* border: 1px solid blue; */
+    /* border: 1px solid blue; debug*/
   }
   .photo img {
 
@@ -442,7 +454,7 @@ footer a:active {
   }
 
   .description {
-    font-size: 16px;
+    font-size: 1em;
     color: DarkTurquoise;
     background-color: rgba(0, 0, 0, 0.5);
     align-items: center;
@@ -455,7 +467,7 @@ footer a:active {
     padding: 2.5em;
     align-items: center;
     justify-content: center;
-    font-size: 18px;
+    font-size: 1.5em;
   }
 
   .form {
