@@ -275,3 +275,218 @@ footer a:active {
   }
 
 }
+
+/* TABLET LAYOUT */
+@media only screen and (min-width: 415px) and (max-width: 1024px) {
+
+  body {
+    background-image: url('Images/bgtablet.jpg');
+  }
+
+  #home,
+  #about,
+  #services,
+  #contact {
+    justify-content: center;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  .topbar {
+    padding-top: 2em;
+  }
+
+  .topbar a {
+    font-size: 28px;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  .name img{
+    display: flex;
+    margin-top: 7em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+
+  .social {
+    justify-content: center;
+  }
+
+  .social img {
+    width: 48px;
+    height: auto;
+    padding:2em 2em 0em 2em;
+  }
+
+  .photo img {
+    display: flex;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0em;
+  }
+
+  .description {
+    font-size: 18px;
+    margin: 7em 3em 3em 3em;
+    padding: 2 em;
+  }
+
+  .description p {
+    padding: 3em;
+  }
+
+  .form {
+    width: 90%;
+  }
+
+  input {
+    resize: none;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
+
+  textarea {
+    resize: none;
+    margin-left: auto;
+    margin-right: auto;
+    height: 20em;
+    width: inherit;
+  }
+
+  footer a {
+    font-size: 38px;
+    margin-bottom: 2em;
+  }
+}
+
+/*Desktop Styles */
+@media only screen and (min-width: 1025px) {
+
+  body {
+    background-image: url('Images/bgdesktop.jpg');
+  }
+
+  #about,
+  #services,
+  #contact {
+    justify-content: center;
+  }
+
+  #home {
+    flex-direction: row;
+  }
+
+  .topbar {
+    padding-top: 1.5em;
+  }
+
+  .topbar a {
+    font-size: 38px;
+    padding-left: 2em;
+    padding-right: 2em;
+    max-width: 100%;
+  }
+
+  header {
+    /* border: 1px solid red;*/
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    margin-top: -10%;
+  }
+
+  .left_part {
+    /* border: 1px solid red; */
+    flex-direction: column;
+    margin-right: -10em;
+  }
+
+  .name {
+    display: flex;
+    justify-content: center;
+  }
+
+  .name img{
+    width: 70%;
+  }
+
+  .social {
+    justify-content: center;
+  }
+
+  .social img {
+    width: 64px;
+    height: auto;
+    padding: 1em;
+  }
+
+  .photo {
+    display: flex;
+    position: absolute;
+    justify-content: flex-end;
+    width: 30%;
+    margin-left: 50%;
+    margin-top: -10%;
+    top: 50%;
+    padding-left: 6%;
+    /* border: 1px solid blue; */
+  }
+  .photo img {
+
+    width: 80%;
+  }
+
+  .description {
+    font-family: 'cascadia';
+    font-size: 16px;
+    color: DarkTurquoise;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+    margin: 7em 10em 1em 10em;
+    padding: 0em 3em 1em 3em;
+  }
+
+  p {
+    padding: 2.5em;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+  }
+
+  .form {
+    width: 50%;
+  }
+
+  label {
+    font-size: 1.2em;
+  }
+
+  input {
+    resize: none;
+    padding: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  .instructions {
+    font-size: 1.2em;
+  }
+
+  textarea {
+    resize: none;
+    height: 18em;
+    width: 50%;
+    align-self: center;
+  }
+
+  footer a {
+    font-size: 38px;
+    margin-bottom: 2em;
+  }
+}
