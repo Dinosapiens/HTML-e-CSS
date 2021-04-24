@@ -12,6 +12,10 @@
   font-style: normal;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0px;
   padding: 0px;
@@ -84,6 +88,11 @@ h1 {
   font-weight: bold;
   text-shadow: 4px 4px black;
   font-size: 200%;
+}
+
+p {
+  align-items: center;
+  justify-content: center;
 }
 
 /* MOBILE LAYOUT */
