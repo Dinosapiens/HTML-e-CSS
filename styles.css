@@ -6,8 +6,8 @@
 }
 
 @font-face {
-  font-family: 'cascadia';
-  src: url('Fonts/Cascadia.ttf');
+  font-family: 'Blackfriday';
+  src: url('Fonts/Blackfriday.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -73,9 +73,9 @@ body {
 }
 
 .description {
-  font-family: 'cascadia';
+  font-family: 'Blackfriday';
   color: DarkTurquoise;
-  font-size: 12px;
+  font-size: 18px;
   background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   flex-direction: column;
@@ -142,7 +142,8 @@ button {
   font-weight: 400;
   color: black;
   padding: 1em 1em;
-  margin-top: 1em;
+  margin-top: 2em;
+  margin-bottom: 2em;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -207,7 +208,7 @@ footer a:active {
   }
 
   .topbar a {
-    font-size: 25px;
+    font-size: 22px;
   }
 
   .social {
@@ -221,14 +222,14 @@ footer a:active {
   }
 
   .description {
-    font-size: 1em;
+    font-size: 1.05em;
     margin: 4.5em 1.5em 2em 1.5em;
     padding-left: 0.3em;
     padding-right: 0.3em;
   }
 
   p {
-    padding: 0.3em;
+    padding: 0.3em 0.6em 0.3em 0.6em;
     margin-bottom: 0em;
   }
 
@@ -329,7 +330,7 @@ footer a:active {
   }
 
   .description {
-    font-size: 18px;
+    font-size: 1.2em;
     margin: 7em 3em 3em 3em;
     padding: 2 em;
   }
@@ -441,7 +442,6 @@ footer a:active {
   }
 
   .description {
-    font-family: 'cascadia';
     font-size: 16px;
     color: DarkTurquoise;
     background-color: rgba(0, 0, 0, 0.5);
