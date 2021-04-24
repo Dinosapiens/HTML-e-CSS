@@ -134,6 +134,32 @@ textarea {
   font-family: inherit;
 }
 
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  width: 100%;
+}
+
+footer a {
+  font-family: 'action_manregular';
+  font-weight: 300;
+  color: #7FFFD4;
+  text-decoration: none;
+  text-shadow: 4px 4px black;
+  position: relative;
+}
+
+footer a:hover {
+  transition: all 0.5s;
+  color: #40E0D0;
+}
+
+footer a:active {
+  color: black;
+}
+
 /* MOBILE LAYOUT */
 @media only screen and (max-width: 414px) {
 
@@ -192,6 +218,32 @@ textarea {
     margin-left: auto;
     margin-right: auto;
     margin-top: 2em;
+  }
+
+  .form {
+    width: 90%;
+  }
+
+  label {
+    font-size: 1.3em;
+  }
+
+  .instructions {
+    justify-content: center;
+  }
+
+  textarea {
+    width: inherit;
+    resize: none;
+    margin-left: auto;
+    margin-right: auto;
+    height: 6em;
+    font-size: 110%;
+  }
+
+  footer a {
+    font-size: 25px;
+    margin-top: 0em;
   }
 
 }
