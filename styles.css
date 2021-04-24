@@ -95,6 +95,45 @@ p {
   justify-content: center;
 }
 
+.form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: inherit;
+}
+
+.instructions {
+  margin: 2em 2em 0em 2em ;
+  text-align: center;
+  text-shadow: 3px 3px DarkSlateGray;
+}
+
+label {
+  text-align: center;
+  margin: 1em 2em 0em 2em;
+  text-shadow: 3px 3px DarkSlateGray;
+}
+
+input {
+  justify-content: flex-end;
+  margin: 0.5em 2em 0em 2em;
+  font-size: 1em;
+  font-family: inherit;
+}
+
+textarea {
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.5em;
+  margin: 0.5em 2em 0em 2em;
+  font-size: 1em;
+  font-family: inherit;
+}
+
 /* MOBILE LAYOUT */
 @media only screen and (max-width: 414px) {
 
